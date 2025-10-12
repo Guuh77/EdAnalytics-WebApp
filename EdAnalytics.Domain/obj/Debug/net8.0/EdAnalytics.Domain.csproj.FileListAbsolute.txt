@@ -1,0 +1,11 @@
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Domain\bin\Debug\net8.0\EdAnalytics.Domain.deps.json
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Domain\bin\Debug\net8.0\EdAnalytics.Domain.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Domain\bin\Debug\net8.0\EdAnalytics.Domain.pdb
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Domain\obj\Debug\net8.0\EdAnalytics.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Domain\obj\Debug\net8.0\EdAnalytics.Domain.AssemblyInfoInputs.cache
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Domain\obj\Debug\net8.0\EdAnalytics.Domain.AssemblyInfo.cs
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Domain\obj\Debug\net8.0\EdAnalytics.Domain.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Domain\obj\Debug\net8.0\EdAnalytics.Domain.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Domain\obj\Debug\net8.0\refint\EdAnalytics.Domain.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Domain\obj\Debug\net8.0\EdAnalytics.Domain.pdb
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Domain\obj\Debug\net8.0\ref\EdAnalytics.Domain.dll

@@ -1,0 +1,12 @@
+# Dependencies
+/packages
+/bin
+/obj
+
+# Visual Studio user files
+*.user
+*.suo
+*.sln.docstates
+
+# Rider files
+.idea

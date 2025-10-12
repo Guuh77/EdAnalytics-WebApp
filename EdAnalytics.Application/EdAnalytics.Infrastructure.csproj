@@ -1,0 +1,48 @@
+﻿// Local: EdAnalytics.Infrastructure/Persistence/AnalyticsDbContext.cs
+
+using EdAnalytics.Domain; // Agora ele busca a entidade do projeto Domain
+using Microsoft.EntityFrameworkCore;
+
+namespace EdAnalytics.Infrastructure.Persistence
+{
+    public class AnalyticsDbContext : DbContext
+    {
+        public AnalyticsDbContext(DbContextOptions<AnalyticsDbContext> options)
+            : base(options)
+        {
+        }
+
+        public DbSetCurso Cursos { get; set; }
+    }}</Project>
+public class AnalyticsDbContext : DbContext
+{
+public AnalyticsDbContext(DbContextOptions<AnalyticsDbContext>
+	options)
+	: base(options)
+	{
+	}
+
+	    public class AnalyticsDbContext : DbContext
+    {
+        public AnalyticsDbContext(DbContextOptions<AnalyticsDbContext> options)
+            : base(options)
+        {
+        }
+
+        <Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EdAnalytics.Application\EdAnalytics.Application.csproj" />
+  </ItemGroup>
+
+</Project>

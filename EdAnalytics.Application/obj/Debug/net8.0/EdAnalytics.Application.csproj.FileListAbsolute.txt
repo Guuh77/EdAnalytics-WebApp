@@ -1,0 +1,15 @@
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\bin\Debug\net8.0\EdAnalytics.Application.deps.json
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\bin\Debug\net8.0\EdAnalytics.Application.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\bin\Debug\net8.0\EdAnalytics.Application.pdb
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\bin\Debug\net8.0\EdAnalytics.Domain.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\bin\Debug\net8.0\EdAnalytics.Domain.pdb
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\EdAnalytics.Application.csproj.AssemblyReference.cache
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\EdAnalytics.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\EdAnalytics.Application.AssemblyInfoInputs.cache
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\EdAnalytics.Application.AssemblyInfo.cs
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\EdAnalytics.Application.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\EdAnalyt.1D4460ED.Up2Date
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\EdAnalytics.Application.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\refint\EdAnalytics.Application.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\EdAnalytics.Application.pdb
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\ref\EdAnalytics.Application.dll

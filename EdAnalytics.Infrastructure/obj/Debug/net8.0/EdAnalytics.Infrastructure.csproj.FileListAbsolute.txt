@@ -1,0 +1,17 @@
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\bin\Debug\net8.0\EdAnalytics.Infrastructure.deps.json
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\bin\Debug\net8.0\EdAnalytics.Infrastructure.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\bin\Debug\net8.0\EdAnalytics.Infrastructure.pdb
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\bin\Debug\net8.0\EdAnalytics.Application.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\bin\Debug\net8.0\EdAnalytics.Domain.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\bin\Debug\net8.0\EdAnalytics.Application.pdb
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\bin\Debug\net8.0\EdAnalytics.Domain.pdb
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\EdAnalytics.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\EdAnalytics.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\EdAnalytics.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\EdAnalytics.Infrastructure.AssemblyInfo.cs
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\EdAnalytics.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\EdAnalyt.448B4CAF.Up2Date
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\EdAnalytics.Infrastructure.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\refint\EdAnalytics.Infrastructure.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\EdAnalytics.Infrastructure.pdb
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\ref\EdAnalytics.Infrastructure.dll
