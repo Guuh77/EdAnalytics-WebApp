@@ -16,3 +16,5 @@ C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Deb
 C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\EdAnalytics.Infrastructure.pdb
 C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\ref\EdAnalytics.Infrastructure.dll
 C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\EdAnalytics.Infrastructure.sourcelink.json
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\bin\Debug\net8.0\EdAnalytics.Infrastructure.runtimeconfig.json
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Infrastructure\obj\Debug\net8.0\EdAnalytics.Infrastructure.genruntimeconfig.cache
