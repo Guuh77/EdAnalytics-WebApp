@@ -1,36 +1,39 @@
 ﻿@page
 @model EdAnalytics.Pages.IndexModel
 @{
-    ViewData["Title"] = "Dashboard";
+    ViewData["Title"] = "Gerenciamento de Cursos";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Dashboard Ed-Analytics</h1>
-    <p>Análise de dados para plataformas EAD.</p>
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Gerenciamento de Cursos</h1>
+    <a asp-page="Create" class="btn btn-primary">
+        Adicionar Novo Curso
+    </a>
 </div>
 
-<div class="mt-5">
-    <h4>Cursos Mais Acessados</h4>
-    <table class="table table-striped table-hover mt-3">
-        <thead class="table-dark">
+<p>Abaixo está a lista de todos os cursos cadastrados na plataforma.</p>
+
+<table class="table table-striped table-hover mt-3">
+    <thead class="table-dark">
+        <tr>
+            <th>Título do Curso</th>
+            <th>Área</th>
+            <th>Visualizações</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var curso in Model.Cursos)
+        {
             <tr>
-                <th>Posição</th>
-                <th>Título do Curso</th>
-                <th>Área</th>
-                <th>Visualizações</th>
+                <td>@curso.Titulo</td>
+                <td>@curso.Area</td>
+                <td>@curso.Visualizacoes.ToString("N0")</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@curso.Id" class="btn btn-sm btn-outline-primary">Editar</a>
+                    <a asp-page="./Delete" asp-route-id="@curso.Id" class="btn btn-sm btn-outline-danger">Excluir</a>
+                </td>
             </tr>
-        </thead>
-        <tbody>
-            @for (var i = 0; i < Model.CursosMaisVistos.Count; i++)
-            {
-                var curso = Model.CursosMaisVistos[i];
-                <tr>
-                    <td>@(i + 1)º</td>
-                    <td>@curso.Titulo</td>
-                    <td>@curso.Area</td>
-                    <td>@curso.Visualizacoes.ToString("N0")</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
+        }
+    </tbody>
+</table>

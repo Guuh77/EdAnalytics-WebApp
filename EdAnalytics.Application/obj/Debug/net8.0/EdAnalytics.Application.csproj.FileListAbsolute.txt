@@ -13,3 +13,4 @@ C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\
 C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\refint\EdAnalytics.Application.dll
 C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\EdAnalytics.Application.pdb
 C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\ref\EdAnalytics.Application.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics.Application\obj\Debug\net8.0\EdAnalytics.Application.sourcelink.json

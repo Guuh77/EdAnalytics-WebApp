@@ -51,3 +51,4 @@ C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics\obj\Debug\net8.0\refin
 C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics\obj\Debug\net8.0\EdAnalytics.pdb
 C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics\obj\Debug\net8.0\EdAnalytics.genruntimeconfig.cache
 C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics\obj\Debug\net8.0\ref\EdAnalytics.dll
+C:\Users\gusta\OneDrive\Documents\EdAnalytics\EdAnalytics\obj\Debug\net8.0\EdAnalytics.sourcelink.json

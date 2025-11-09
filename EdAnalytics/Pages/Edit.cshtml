@@ -1,0 +1,46 @@
+﻿@page
+@model EdAnalytics.Pages.EditModel
+@{
+    ViewData["Title"] = "Editar Curso";
+}
+
+<h1>Editar Curso</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form method="post">
+
+            <input type="hidden" asp-for="Curso.Id" />
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="mb-3">
+                <label asp-for="Curso.Titulo" class="form-label"></label>
+                <input asp-for="Curso.Titulo" class="form-control" />
+                <span asp-validation-for="Curso.Titulo" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Curso.Area" class="form-label"></label>
+                <input asp-for="Curso.Area" class="form-control" />
+                <span asp-validation-for="Curso.Area" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Curso.Visualizacoes" class="form-label"></label>
+                <input asp-for="Curso.Visualizacoes" class="form-control" type="number" />
+                <span asp-validation-for="Curso.Visualizacoes" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+            <a asp-page="./Index" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

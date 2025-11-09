@@ -1,0 +1,39 @@
+﻿@page
+@model EdAnalytics.Pages.DeleteModel
+@{
+    ViewData["Title"] = "Deletar Curso";
+}
+
+<h1>Deletar Curso</h1>
+<hr />
+
+<h3>Você tem certeza que deseja deletar este curso?</h3>
+<div>
+    <h4>Curso</h4>
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Curso.Titulo)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Curso.Titulo)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Curso.Area)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Curso.Area)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Curso.Visualizacoes)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Curso.Visualizacoes)
+        </dd>
+    </dl>
+
+    <form method="post">
+        <input type="hidden" asp-for="Curso.Id" />
+        <button type="submit" class="btn btn-danger">Deletar</button>
+        <a asp-page="./Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

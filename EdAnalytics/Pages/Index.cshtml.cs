@@ -12,10 +12,12 @@ namespace EdAnalytics.Pages
         {
             _analyticsService = analyticsService;
         }
-        public List<CursoDto> CursosMaisVistos { get; set; } = new List<CursoDto>();
+
+        public List<CursoDto> Cursos { get; set; } = new List<CursoDto>();
+
         public async Task OnGetAsync()
         {
-            CursosMaisVistos = await _analyticsService.GetCursosMaisVistosAsync();
+            Cursos = await _analyticsService.GetAllCursosAsync();
         }
     }
 }

@@ -7,6 +7,58 @@
       "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics\\pages\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\pages\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics\\pages\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\pages\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics\\pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics\\pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics\\pages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\pages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics\\pages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\pages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.application\\services\\analyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|solutionrelative:edanalytics.application\\services\\analyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A18636D-6856-4E68-810D-1F1E880A2A92}|EdAnalytics.Infrastructure\\EdAnalytics.Infrastructure.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.infrastructure\\repositories\\cursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A18636D-6856-4E68-810D-1F1E880A2A92}|EdAnalytics.Infrastructure\\EdAnalytics.Infrastructure.csproj|solutionrelative:edanalytics.infrastructure\\repositories\\cursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.application\\interfaces\\icursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|solutionrelative:edanalytics.application\\interfaces\\icursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.application\\interfaces\\ianalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|solutionrelative:edanalytics.application\\interfaces\\ianalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.application\\viewmodels\\cursoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|solutionrelative:edanalytics.application\\viewmodels\\cursoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.application\\edanalytics.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|solutionrelative:edanalytics.application\\edanalytics.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,32 +71,12 @@
       "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\edanalytics.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.application\\services\\analyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|solutionrelative:edanalytics.application\\services\\analyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.application\\interfaces\\ianalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|solutionrelative:edanalytics.application\\interfaces\\ianalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.application\\dtos\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|solutionrelative:edanalytics.application\\dtos\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.application\\edanalytics.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|solutionrelative:edanalytics.application\\edanalytics.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01A2F637-884D-4904-8D20-9880A2213467}|EdAnalytics\\EdAnalytics.csproj|solutionrelative:edanalytics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.application\\interfaces\\icursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{660819B2-8241-4A2E-B983-EB94A47F987C}|EdAnalytics.Application\\EdAnalytics.Application.csproj|solutionrelative:edanalytics.application\\interfaces\\icursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2AD32537-E070-4D46-8B76-4B3E672B1C51}|EdAnalytics.Domain\\EdAnalytics.Domain.csproj|c:\\users\\gusta\\onedrive\\documents\\edanalytics\\edanalytics.domain\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,58 +90,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AnalyticsDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Infrastructure\\Persistence\\AnalyticsDbContext.cs",
-              "RelativeDocumentMoniker": "EdAnalytics.Infrastructure\\Persistence\\AnalyticsDbContext.cs",
-              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Infrastructure\\Persistence\\AnalyticsDbContext.cs",
-              "RelativeToolTip": "EdAnalytics.Infrastructure\\Persistence\\AnalyticsDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T09:22:49.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Curso.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Models\\Curso.cs",
-              "RelativeDocumentMoniker": "EdAnalytics\\Models\\Curso.cs",
-              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Models\\Curso.cs",
-              "RelativeToolTip": "EdAnalytics\\Models\\Curso.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T09:20:55.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EdAnalytics",
-              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\EdAnalytics.csproj",
-              "RelativeDocumentMoniker": "EdAnalytics\\EdAnalytics.csproj",
-              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\EdAnalytics.csproj",
-              "RelativeToolTip": "EdAnalytics\\EdAnalytics.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-12T09:20:37.031Z",
-              "EditorCaption": ""
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "EdAnalytics\\Pages\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Delete.cshtml.cs",
+              "RelativeToolTip": "EdAnalytics\\Pages\\Delete.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T10:34:35.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Delete.cshtml",
+              "RelativeDocumentMoniker": "EdAnalytics\\Pages\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Delete.cshtml",
+              "RelativeToolTip": "EdAnalytics\\Pages\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T10:34:31.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "EdAnalytics\\Pages\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Edit.cshtml.cs",
+              "RelativeToolTip": "EdAnalytics\\Pages\\Edit.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T10:32:23.109Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AnalyticsService.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\Services\\AnalyticsService.cs",
-              "RelativeDocumentMoniker": "EdAnalytics.Application\\Services\\AnalyticsService.cs",
-              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\Services\\AnalyticsService.cs",
-              "RelativeToolTip": "EdAnalytics.Application\\Services\\AnalyticsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EdAnalytics\\Pages\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Edit.cshtml",
+              "RelativeToolTip": "EdAnalytics\\Pages\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T10:32:17.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Create.cshtml",
+              "RelativeDocumentMoniker": "EdAnalytics\\Pages\\Create.cshtml",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Create.cshtml",
+              "RelativeToolTip": "EdAnalytics\\Pages\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T10:30:18.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "EdAnalytics\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "EdAnalytics\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T08:50:26.353Z"
+              "WhenOpened": "2025-10-12T09:00:57.035Z"
             },
             {
               "$type": "Document",
@@ -119,38 +172,134 @@
               "RelativeDocumentMoniker": "EdAnalytics\\Pages\\Index.cshtml",
               "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Index.cshtml",
               "RelativeToolTip": "EdAnalytics\\Pages\\Index.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAABkAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-12T08:20:36.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "EdAnalytics\\Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "EdAnalytics\\Pages\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "EdAnalytics\\Pages\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Pages\\Create.cshtml.cs",
+              "RelativeToolTip": "EdAnalytics\\Pages\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T09:00:57.035Z"
+              "WhenOpened": "2025-11-09T10:30:24.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
+              "Title": "CursoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Infrastructure\\Repositories\\CursoRepository.cs",
+              "RelativeDocumentMoniker": "EdAnalytics.Infrastructure\\Repositories\\CursoRepository.cs",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Infrastructure\\Repositories\\CursoRepository.cs",
+              "RelativeToolTip": "EdAnalytics.Infrastructure\\Repositories\\CursoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T10:22:32.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CursoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\ViewModels\\CursoViewModel.cs",
+              "RelativeDocumentMoniker": "EdAnalytics.Application\\ViewModels\\CursoViewModel.cs",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\ViewModels\\CursoViewModel.cs",
+              "RelativeToolTip": "EdAnalytics.Application\\ViewModels\\CursoViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T10:19:02.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AnalyticsService.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\Services\\AnalyticsService.cs",
+              "RelativeDocumentMoniker": "EdAnalytics.Application\\Services\\AnalyticsService.cs",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\Services\\AnalyticsService.cs",
+              "RelativeToolTip": "EdAnalytics.Application\\Services\\AnalyticsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T08:50:26.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "IAnalyticsService.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\Interfaces\\IAnalyticsService.cs",
               "RelativeDocumentMoniker": "EdAnalytics.Application\\Interfaces\\IAnalyticsService.cs",
               "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\Interfaces\\IAnalyticsService.cs",
               "RelativeToolTip": "EdAnalytics.Application\\Interfaces\\IAnalyticsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T08:49:24.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
+              "Title": "ICursoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\Interfaces\\ICursoRepository.cs",
+              "RelativeDocumentMoniker": "EdAnalytics.Application\\Interfaces\\ICursoRepository.cs",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\Interfaces\\ICursoRepository.cs",
+              "RelativeToolTip": "EdAnalytics.Application\\Interfaces\\ICursoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T08:45:41.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EdAnalytics.csproj",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\EdAnalytics.csproj",
+              "RelativeDocumentMoniker": "EdAnalytics\\EdAnalytics.csproj",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\EdAnalytics.csproj",
+              "RelativeToolTip": "EdAnalytics\\EdAnalytics.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-12T09:20:37.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EdAnalytics.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\EdAnalytics.Application.csproj",
+              "RelativeDocumentMoniker": "EdAnalytics.Application\\EdAnalytics.Application.csproj",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\EdAnalytics.Application.csproj",
+              "RelativeToolTip": "EdAnalytics.Application\\EdAnalytics.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-12T08:40:39.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Curso.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Models\\Curso.cs",
+              "RelativeDocumentMoniker": "EdAnalytics\\Models\\Curso.cs",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Models\\Curso.cs",
+              "RelativeToolTip": "EdAnalytics\\Models\\Curso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T09:20:55.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AnalyticsDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Infrastructure\\Persistence\\AnalyticsDbContext.cs",
+              "RelativeDocumentMoniker": "EdAnalytics.Infrastructure\\Persistence\\AnalyticsDbContext.cs",
+              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Infrastructure\\Persistence\\AnalyticsDbContext.cs",
+              "RelativeToolTip": "EdAnalytics.Infrastructure\\Persistence\\AnalyticsDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T09:22:49.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "CursoDto.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\DTOs\\CursoDto.cs",
               "RelativeDocumentMoniker": "EdAnalytics.Application\\DTOs\\CursoDto.cs",
@@ -162,20 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EdAnalytics.Application.csproj",
-              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\EdAnalytics.Application.csproj",
-              "RelativeDocumentMoniker": "EdAnalytics.Application\\EdAnalytics.Application.csproj",
-              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\EdAnalytics.Application.csproj",
-              "RelativeToolTip": "EdAnalytics.Application\\EdAnalytics.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-12T08:40:39.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics\\Program.cs",
               "RelativeDocumentMoniker": "EdAnalytics\\Program.cs",
@@ -187,19 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ICursoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\Interfaces\\ICursoRepository.cs",
-              "RelativeDocumentMoniker": "EdAnalytics.Application\\Interfaces\\ICursoRepository.cs",
-              "ToolTip": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Application\\Interfaces\\ICursoRepository.cs",
-              "RelativeToolTip": "EdAnalytics.Application\\Interfaces\\ICursoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T08:45:41.714Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "Curso.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\OneDrive\\Documents\\EdAnalytics\\EdAnalytics.Domain\\Curso.cs",
               "RelativeDocumentMoniker": "EdAnalytics.Domain\\Curso.cs",
