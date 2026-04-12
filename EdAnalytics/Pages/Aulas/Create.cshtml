@@ -1,0 +1,31 @@
+@page
+@model EdAnalytics.Pages.Aulas.CreateModel
+@{
+    ViewData["Title"] = "Criar Nova Aula";
+}
+
+<h2>Criar Nova Aula</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-8">
+        <form method="post">
+            <input type="hidden" asp-for="Aula.CursoId" />
+            
+            <div class="mb-3">
+                <label asp-for="Aula.Titulo" class="form-label">Título</label>
+                <input asp-for="Aula.Titulo" class="form-control" />
+                <span asp-validation-for="Aula.Titulo" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label asp-for="Aula.Conteudo" class="form-label">Conteúdo da Aula (Suporta HTML para leitura rica)</label>
+                <textarea asp-for="Aula.Conteudo" class="form-control" rows="15"></textarea>
+                <span asp-validation-for="Aula.Conteudo" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar Aula</button>
+            <a asp-page="./Index" asp-route-cursoId="@Model.Aula.CursoId" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</div>

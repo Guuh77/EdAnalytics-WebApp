@@ -1,0 +1,34 @@
+@page
+@model EdAnalytics.Pages.Aulas.IndexModel
+@{
+    ViewData["Title"] = "Aulas do Curso";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Aulas do Curso</h1>
+    <div>
+        <a asp-page="/Index" class="btn btn-secondary">Voltar aos Cursos</a>
+        <a asp-page="Create" asp-route-cursoId="@Model.CursoId" class="btn btn-primary">
+            Nova Aula
+        </a>
+    </div>
+</div>
+
+<div class="list-group mt-4">
+    @if(Model.Aulas.Count == 0)
+    {
+        <p>Nenhuma aula encontrada para este curso.</p>
+    }
+    @foreach (var aula in Model.Aulas)
+    {
+        <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <div>
+                <h5 class="mb-1">@aula.Titulo</h5>
+                <small class="text-muted">ID: @aula.Id</small>
+            </div>
+            <div>
+                <a asp-page="./Details" asp-route-id="@aula.Id" class="btn btn-sm btn-success">Estudar</a>
+            </div>
+        </div>
+    }
+</div>

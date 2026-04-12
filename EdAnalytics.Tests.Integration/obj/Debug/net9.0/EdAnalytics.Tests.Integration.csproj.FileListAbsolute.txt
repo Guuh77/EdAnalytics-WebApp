@@ -1,0 +1,7 @@
+C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Tests.Integration\bin\Debug\net9.0\.msCoverageSourceRootsMapping_EdAnalytics.Tests.Integration
+C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Tests.Integration\bin\Debug\net9.0\CoverletSourceRootsMapping_EdAnalytics.Tests.Integration
+C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Tests.Integration\obj\Debug\net9.0\EdAnalytics.Tests.Integration.csproj.AssemblyReference.cache
+C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Tests.Integration\obj\Debug\net9.0\EdAnalytics.Tests.Integration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Tests.Integration\obj\Debug\net9.0\EdAnalytics.Tests.Integration.AssemblyInfoInputs.cache
+C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Tests.Integration\obj\Debug\net9.0\EdAnalytics.Tests.Integration.AssemblyInfo.cs
+C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Tests.Integration\obj\Debug\net9.0\EdAnalytics.Tests.Integration.csproj.CoreCompileInputs.cache

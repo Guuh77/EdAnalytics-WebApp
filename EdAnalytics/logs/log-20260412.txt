@@ -1,0 +1,686 @@
+2026-04-12 00:06:47.756 -03:00 [ERR] 2026-04-12 00:06:47.754229 ThreadID:1   (ERROR)   OracleRelationalCommand.ExecuteReader() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+2026-04-12 00:06:47.808 -03:00 [ERR] Failed executing DbCommand (130ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Cursos" "c") THEN True
+    ELSE False
+END FROM DUAL
+2026-04-12 00:06:47.887 -03:00 [ERR] 2026-04-12 00:06:47.887619 ThreadID:1   (ERROR)   OracleExecutionStrategy.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+2026-04-12 00:06:47.906 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EdAnalytics.Infrastructure.Persistence.AnalyticsDbContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2026-04-12 00:06:47.919 -03:00 [ERR] Erro no Database Seeder.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method4(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at EdAnalytics.Infrastructure.Persistence.AnalyticsDataSeeder.Initialize(AnalyticsDbContext context) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Infrastructure\Persistence\AnalyticsDataSeeder.cs:line 13
+   at Program.<Main>$(String[] args) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics\Program.cs:line 91
+2026-04-12 00:06:54.600 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 00:06:54.978 -03:00 [INF] HTTP GET / responded 200 in 377.6758 ms
+2026-04-12 00:06:55.012 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 4.2618 ms
+2026-04-12 00:06:55.018 -03:00 [INF] HTTP GET /css/site.css responded 304 in 9.1497 ms
+2026-04-12 00:06:55.018 -03:00 [INF] HTTP GET /js/site.js responded 304 in 3.9785 ms
+2026-04-12 00:06:55.018 -03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 304 in 3.9759 ms
+2026-04-12 00:06:55.018 -03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 304 in 4.0489 ms
+2026-04-12 00:06:55.032 -03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 304 in 0.4901 ms
+2026-04-12 00:06:55.075 -03:00 [INF] HTTP GET /favicon.ico responded 304 in 0.3044 ms
+2026-04-12 00:07:03.524 -03:00 [ERR] 2026-04-12 00:07:03.524820 ThreadID:5   (ERROR)   OracleRelationalCommand.ExecuteReaderAsync() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00942: a tabela ou view não existe
+https://docs.oracle.com/error-help/db/ora-00942/
+   at Oracle.ManagedDataAccess.Client.OracleCommand.<>c.<ExecuteDbDataReaderAsync>b__232_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-04-12 00:07:03.529 -03:00 [ERR] Failed executing DbCommand (62ms) [Parameters=[:cursoId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."Conteudo", "a"."CursoId", "a"."Titulo"
+FROM "Aulas" "a"
+WHERE "a"."CursoId" = :cursoId_0
+2026-04-12 00:07:03.535 -03:00 [ERR] 2026-04-12 00:07:03.535441 ThreadID:5   (ERROR)   OracleExecutionStrategy.ExecuteAsync() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00942: a tabela ou view não existe
+https://docs.oracle.com/error-help/db/ora-00942/
+   at Oracle.ManagedDataAccess.Client.OracleCommand.<>c.<ExecuteDbDataReaderAsync>b__232_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-04-12 00:07:03.539 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EdAnalytics.Infrastructure.Persistence.AnalyticsDbContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00942: a tabela ou view não existe
+https://docs.oracle.com/error-help/db/ora-00942/
+   at Oracle.ManagedDataAccess.Client.OracleCommand.<>c.<ExecuteDbDataReaderAsync>b__232_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00942: a tabela ou view não existe
+https://docs.oracle.com/error-help/db/ora-00942/
+   at Oracle.ManagedDataAccess.Client.OracleCommand.<>c.<ExecuteDbDataReaderAsync>b__232_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-04-12 00:07:03.565 -03:00 [ERR] HTTP GET /Aulas responded 500 in 199.3848 ms
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00942: a tabela ou view não existe
+https://docs.oracle.com/error-help/db/ora-00942/
+   at Oracle.ManagedDataAccess.Client.OracleCommand.<>c.<ExecuteDbDataReaderAsync>b__232_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at EdAnalytics.Infrastructure.Repositories.AulaRepository.GetAulasPorCursoAsync(Int32 cursoId) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Infrastructure\Repositories\AulaRepository.cs:line 19
+   at EdAnalytics.Application.Services.AulaService.GetAulasPorCursoAsync(Int32 cursoId) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Application\Services\AulaService.cs:line 19
+   at EdAnalytics.Pages.Aulas.IndexModel.OnGetAsync() in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics\Pages\Aulas\Index.cshtml.cs:line 24
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-04-12 00:07:03.672 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00942: a tabela ou view não existe
+https://docs.oracle.com/error-help/db/ora-00942/
+   at Oracle.ManagedDataAccess.Client.OracleCommand.<>c.<ExecuteDbDataReaderAsync>b__232_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at EdAnalytics.Infrastructure.Repositories.AulaRepository.GetAulasPorCursoAsync(Int32 cursoId) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Infrastructure\Repositories\AulaRepository.cs:line 19
+   at EdAnalytics.Application.Services.AulaService.GetAulasPorCursoAsync(Int32 cursoId) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Application\Services\AulaService.cs:line 19
+   at EdAnalytics.Pages.Aulas.IndexModel.OnGetAsync() in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics\Pages\Aulas\Index.cshtml.cs:line 24
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-12 00:11:24.934 -03:00 [ERR] 2026-04-12 00:11:24.932211 ThreadID:1   (ERROR)   OracleRelationalCommand.ExecuteReader() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+2026-04-12 00:11:24.974 -03:00 [ERR] Failed executing DbCommand (86ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Cursos" "c") THEN True
+    ELSE False
+END FROM DUAL
+2026-04-12 00:11:24.982 -03:00 [ERR] 2026-04-12 00:11:24.982121 ThreadID:1   (ERROR)   OracleExecutionStrategy.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+2026-04-12 00:11:24.988 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EdAnalytics.Infrastructure.Persistence.AnalyticsDbContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2026-04-12 00:11:24.993 -03:00 [ERR] Erro no Database Seeder.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method4(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at EdAnalytics.Infrastructure.Persistence.AnalyticsDataSeeder.Initialize(AnalyticsDbContext context) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Infrastructure\Persistence\AnalyticsDataSeeder.cs:line 13
+   at Program.<Main>$(String[] args) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics\Program.cs:line 91
+2026-04-12 00:11:57.794 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 00:11:58.169 -03:00 [INF] HTTP GET / responded 200 in 375.8841 ms
+2026-04-12 00:11:58.201 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 2.9149 ms
+2026-04-12 00:11:58.202 -03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 304 in 2.1509 ms
+2026-04-12 00:11:58.202 -03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 304 in 3.3808 ms
+2026-04-12 00:11:58.202 -03:00 [INF] HTTP GET /css/site.css responded 304 in 6.9669 ms
+2026-04-12 00:11:58.202 -03:00 [INF] HTTP GET /js/site.js responded 304 in 1.2546 ms
+2026-04-12 00:11:58.210 -03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 304 in 0.5412 ms
+2026-04-12 00:11:58.254 -03:00 [INF] HTTP GET /favicon.ico responded 304 in 0.4155 ms
+2026-04-12 00:12:00.385 -03:00 [INF] HTTP GET /Aulas responded 200 in 213.7329 ms
+2026-04-12 00:12:00.429 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 3.6106 ms
+2026-04-12 00:12:04.093 -03:00 [INF] HTTP GET / responded 200 in 27.3621 ms
+2026-04-12 00:12:04.127 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5881 ms
+2026-04-12 00:12:05.258 -03:00 [INF] HTTP GET /Aulas responded 200 in 25.8391 ms
+2026-04-12 00:12:05.292 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.7140 ms
+2026-04-12 00:12:07.272 -03:00 [INF] HTTP GET / responded 200 in 27.5248 ms
+2026-04-12 00:12:07.309 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5965 ms
+2026-04-12 00:12:08.517 -03:00 [INF] HTTP GET /Aulas responded 200 in 22.3976 ms
+2026-04-12 00:12:08.553 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 1.0354 ms
+2026-04-12 00:12:10.100 -03:00 [INF] HTTP GET / responded 200 in 21.7592 ms
+2026-04-12 00:12:10.136 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5500 ms
+2026-04-12 00:12:11.263 -03:00 [INF] HTTP GET /Aulas responded 200 in 20.6332 ms
+2026-04-12 00:12:11.307 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2200 ms
+2026-04-12 00:13:58.612 -03:00 [ERR] 2026-04-12 00:13:58.610396 ThreadID:1   (ERROR)   OracleRelationalCommand.ExecuteReader() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+2026-04-12 00:13:58.656 -03:00 [ERR] Failed executing DbCommand (102ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Aulas" "a") THEN True
+    ELSE False
+END FROM DUAL
+2026-04-12 00:13:58.663 -03:00 [ERR] 2026-04-12 00:13:58.663524 ThreadID:1   (ERROR)   OracleExecutionStrategy.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+2026-04-12 00:13:58.671 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EdAnalytics.Infrastructure.Persistence.AnalyticsDbContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2026-04-12 00:13:58.676 -03:00 [ERR] Erro no Database Seeder.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method4(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at EdAnalytics.Infrastructure.Persistence.AnalyticsDataSeeder.Initialize(AnalyticsDbContext context) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Infrastructure\Persistence\AnalyticsDataSeeder.cs:line 13
+   at Program.<Main>$(String[] args) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics\Program.cs:line 91
+2026-04-12 00:14:03.708 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 00:14:04.049 -03:00 [INF] HTTP GET / responded 200 in 343.0483 ms
+2026-04-12 00:14:04.108 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 2.7356 ms
+2026-04-12 00:14:05.851 -03:00 [INF] HTTP GET /Aulas responded 200 in 185.7763 ms
+2026-04-12 00:14:05.884 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4049 ms
+2026-04-12 00:14:09.751 -03:00 [INF] HTTP GET / responded 200 in 21.8361 ms
+2026-04-12 00:14:09.790 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4901 ms
+2026-04-12 00:15:38.020 -03:00 [ERR] 2026-04-12 00:15:38.017414 ThreadID:1   (ERROR)   OracleRelationalCommand.ExecuteReader() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+2026-04-12 00:15:38.069 -03:00 [ERR] Failed executing DbCommand (117ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Aulas" "a") THEN True
+    ELSE False
+END FROM DUAL
+2026-04-12 00:15:38.076 -03:00 [ERR] 2026-04-12 00:15:38.076425 ThreadID:1   (ERROR)   OracleExecutionStrategy.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+2026-04-12 00:15:38.083 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EdAnalytics.Infrastructure.Persistence.AnalyticsDbContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2026-04-12 00:15:38.088 -03:00 [ERR] Erro no Database Seeder.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method4(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at EdAnalytics.Infrastructure.Persistence.AnalyticsDataSeeder.Initialize(AnalyticsDbContext context) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Infrastructure\Persistence\AnalyticsDataSeeder.cs:line 13
+   at Program.<Main>$(String[] args) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics\Program.cs:line 91
+2026-04-12 00:15:42.818 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 00:15:43.273 -03:00 [INF] HTTP GET / responded 200 in 454.1620 ms
+2026-04-12 00:15:43.326 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 2.9846 ms
+2026-04-12 00:15:43.331 -03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 304 in 4.3172 ms
+2026-04-12 00:15:43.331 -03:00 [INF] HTTP GET /css/site.css responded 304 in 6.1580 ms
+2026-04-12 00:15:43.331 -03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 304 in 7.1345 ms
+2026-04-12 00:15:43.333 -03:00 [INF] HTTP GET /js/site.js responded 304 in 0.8113 ms
+2026-04-12 00:15:43.341 -03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 304 in 1.0023 ms
+2026-04-12 00:15:43.424 -03:00 [INF] HTTP GET /favicon.ico responded 304 in 0.2992 ms
+2026-04-12 00:15:44.827 -03:00 [INF] HTTP GET /Aulas responded 200 in 181.9962 ms
+2026-04-12 00:15:44.861 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.9763 ms
+2026-04-12 00:15:46.412 -03:00 [INF] HTTP GET /Aulas/Create responded 200 in 37.7659 ms
+2026-04-12 00:15:46.445 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 1.1805 ms
+2026-04-12 00:15:54.734 -03:00 [INF] HTTP GET /Aulas responded 200 in 28.2208 ms
+2026-04-12 00:15:54.768 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5740 ms
+2026-04-12 00:15:57.512 -03:00 [INF] HTTP GET / responded 200 in 25.4283 ms
+2026-04-12 00:15:57.548 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4528 ms
+2026-04-12 00:15:59.348 -03:00 [INF] HTTP GET /Aulas responded 200 in 28.3698 ms
+2026-04-12 00:15:59.384 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.8051 ms
+2026-04-12 00:16:00.813 -03:00 [INF] HTTP GET / responded 200 in 28.2775 ms
+2026-04-12 00:16:00.850 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 1.5144 ms
+2026-04-12 00:17:44.412 -03:00 [ERR] 2026-04-12 00:17:44.410489 ThreadID:1   (ERROR)   OracleRelationalCommand.ExecuteNonQuery() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-22858: alteração inválida do tipo de dados
+ORA-06512: em line 10
+https://docs.oracle.com/error-help/db/ora-22858/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+2026-04-12 00:17:44.458 -03:00 [ERR] Failed executing DbCommand (337ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+declare
+   l_nullable user_tab_columns.nullable % type;
+begin 
+   select nullable into l_nullable 
+   from user_tab_columns 
+  where table_name = 'Aulas' 
+  and column_name = 'Conteudo' 
+;
+   if l_nullable = 'N' then 
+        EXECUTE IMMEDIATE 'ALTER TABLE "Aulas" MODIFY "Conteudo" CLOB ';
+ else 
+        EXECUTE IMMEDIATE 'ALTER TABLE "Aulas" MODIFY "Conteudo" CLOB NOT NULL';
+ end if;
+end;
+2026-04-12 00:17:44.487 -03:00 [ERR] 2026-04-12 00:17:44.487664 ThreadID:1   (ERROR)   OracleExecutionStrategy.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-22858: alteração inválida do tipo de dados
+ORA-06512: em line 10
+https://docs.oracle.com/error-help/db/ora-22858/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Migrations.MigrationCommand.ExecuteNonQuery(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.Execute(IReadOnlyList`1 migrationCommands, IRelationalConnection connection, MigrationExecutionState executionState, Boolean beginTransaction, Boolean commitTransaction, Nullable`1 isolationLevel)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.<>c.<ExecuteNonQuery>b__3_1(DbContext _, ValueTuple`6 s)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+2026-04-12 00:17:44.544 -03:00 [ERR] 2026-04-12 00:17:44.544306 ThreadID:1   (ERROR)   OracleExecutionStrategy.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-22858: alteração inválida do tipo de dados
+ORA-06512: em line 10
+https://docs.oracle.com/error-help/db/ora-22858/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Migrations.MigrationCommand.ExecuteNonQuery(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.Execute(IReadOnlyList`1 migrationCommands, IRelationalConnection connection, MigrationExecutionState executionState, Boolean beginTransaction, Boolean commitTransaction, Nullable`1 isolationLevel)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.<>c.<ExecuteNonQuery>b__3_1(DbContext _, ValueTuple`6 s)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQuery(IReadOnlyList`1 migrationCommands, IRelationalConnection connection, MigrationExecutionState executionState, Boolean commitTransaction, Nullable`1 isolationLevel)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.MigrateImplementation(DbContext context, String targetMigration, MigrationExecutionState state, Boolean useTransaction)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.<>c.<Migrate>b__20_1(DbContext c, ValueTuple`4 s)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+2026-04-12 00:20:53.557 -03:00 [ERR] 2026-04-12 00:20:53.554968 ThreadID:1   (ERROR)   OracleRelationalCommand.ExecuteReader() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+2026-04-12 00:20:53.601 -03:00 [ERR] Failed executing DbCommand (112ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Aulas" "a") THEN True
+    ELSE False
+END FROM DUAL
+2026-04-12 00:20:53.609 -03:00 [ERR] 2026-04-12 00:20:53.609116 ThreadID:1   (ERROR)   OracleExecutionStrategy.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+2026-04-12 00:20:53.614 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EdAnalytics.Infrastructure.Persistence.AnalyticsDbContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2026-04-12 00:20:53.620 -03:00 [ERR] Erro no Database Seeder.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "FALSE": identificador inválido
+https://docs.oracle.com/error-help/db/ora-00904/
+   at OracleInternal.ServiceObjects.OracleFailoverMgrImpl.OnError(OracleConnection connection, CallHistoryRecord chr, Object mi, Exception ex, Boolean bTopLevelCall, Boolean& bCanRecordNewCall)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method4(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at EdAnalytics.Infrastructure.Persistence.AnalyticsDataSeeder.Initialize(AnalyticsDbContext context) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics.Infrastructure\Persistence\AnalyticsDataSeeder.cs:line 13
+   at Program.<Main>$(String[] args) in C:\Users\gusta\OneDrive\Documents\Sprint3Net\EdAnalytics-WebApp-.NET 1\EdAnalytics-WebApp-main\EdAnalytics\Program.cs:line 91
+2026-04-12 00:21:00.281 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 00:21:00.686 -03:00 [INF] HTTP GET / responded 200 in 407.5045 ms
+2026-04-12 00:21:00.726 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 3.9250 ms
+2026-04-12 00:21:00.729 -03:00 [INF] HTTP GET /css/site.css responded 304 in 6.6808 ms
+2026-04-12 00:21:00.729 -03:00 [INF] HTTP GET /js/site.js responded 304 in 1.7526 ms
+2026-04-12 00:21:00.729 -03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 304 in 6.9858 ms
+2026-04-12 00:21:00.730 -03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 304 in 3.3170 ms
+2026-04-12 00:21:00.739 -03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 304 in 0.7560 ms
+2026-04-12 00:21:00.872 -03:00 [INF] HTTP GET /favicon.ico responded 304 in 0.6973 ms
+2026-04-12 00:21:02.499 -03:00 [INF] HTTP GET /Aulas responded 200 in 245.7529 ms
+2026-04-12 00:21:02.534 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5628 ms
+2026-04-12 00:24:41.845 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 00:24:42.241 -03:00 [INF] HTTP GET / responded 200 in 407.0139 ms
+2026-04-12 00:24:42.300 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 3.1184 ms
+2026-04-12 00:24:47.226 -03:00 [INF] HTTP GET /Aulas responded 200 in 181.5396 ms
+2026-04-12 00:24:47.265 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.7432 ms
+2026-04-12 00:24:49.020 -03:00 [INF] HTTP GET / responded 200 in 26.2925 ms
+2026-04-12 00:24:49.058 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5584 ms
+2026-04-12 00:24:51.822 -03:00 [INF] HTTP GET /Aulas responded 200 in 228.9161 ms
+2026-04-12 00:24:51.858 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.8971 ms
+2026-04-12 00:24:57.615 -03:00 [INF] HTTP GET / responded 200 in 24.4800 ms
+2026-04-12 00:24:57.650 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 2.4768 ms
+2026-04-12 00:25:00.663 -03:00 [INF] HTTP GET /Aulas responded 200 in 174.9109 ms
+2026-04-12 00:25:00.700 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4248 ms
+2026-04-12 00:25:02.971 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 181.5792 ms
+2026-04-12 00:25:03.007 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5559 ms
+2026-04-12 00:25:34.657 -03:00 [INF] HTTP GET /Aulas responded 200 in 187.5848 ms
+2026-04-12 00:25:34.699 -03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 304 in 6.5407 ms
+2026-04-12 00:25:34.700 -03:00 [INF] HTTP GET /css/site.css responded 304 in 0.7983 ms
+2026-04-12 00:25:34.701 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.3294 ms
+2026-04-12 00:25:34.703 -03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 304 in 0.4719 ms
+2026-04-12 00:25:34.703 -03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 304 in 0.4542 ms
+2026-04-12 00:25:34.709 -03:00 [INF] HTTP GET /js/site.js responded 304 in 0.4377 ms
+2026-04-12 00:25:36.523 -03:00 [INF] HTTP GET / responded 200 in 21.5691 ms
+2026-04-12 00:25:36.554 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2479 ms
+2026-04-12 00:25:45.566 -03:00 [INF] HTTP GET /Aulas responded 200 in 21.3947 ms
+2026-04-12 00:25:45.601 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2857 ms
+2026-04-12 00:25:46.807 -03:00 [INF] HTTP GET / responded 200 in 27.3568 ms
+2026-04-12 00:25:46.841 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4537 ms
+2026-04-12 00:25:48.571 -03:00 [INF] HTTP GET /Delete responded 200 in 74.0768 ms
+2026-04-12 00:25:48.610 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.9878 ms
+2026-04-12 00:25:50.522 -03:00 [INF] HTTP POST /Delete responded 302 in 259.5269 ms
+2026-04-12 00:25:50.555 -03:00 [INF] HTTP GET / responded 200 in 24.4989 ms
+2026-04-12 00:25:50.693 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2814 ms
+2026-04-12 00:25:52.801 -03:00 [INF] HTTP GET /Delete responded 200 in 25.3328 ms
+2026-04-12 00:25:52.840 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 1.4412 ms
+2026-04-12 00:25:54.392 -03:00 [INF] HTTP POST /Delete responded 302 in 99.8875 ms
+2026-04-12 00:25:54.424 -03:00 [INF] HTTP GET / responded 200 in 26.2414 ms
+2026-04-12 00:25:54.573 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.3383 ms
+2026-04-12 00:25:56.630 -03:00 [INF] HTTP GET /Delete responded 200 in 24.3749 ms
+2026-04-12 00:25:56.667 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4564 ms
+2026-04-12 00:25:58.044 -03:00 [INF] HTTP POST /Delete responded 302 in 86.5617 ms
+2026-04-12 00:25:58.071 -03:00 [INF] HTTP GET / responded 200 in 21.3211 ms
+2026-04-12 00:25:58.169 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2836 ms
+2026-04-12 00:25:59.925 -03:00 [INF] HTTP GET /Delete responded 200 in 21.4928 ms
+2026-04-12 00:25:59.960 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4545 ms
+2026-04-12 00:26:01.516 -03:00 [INF] HTTP POST /Delete responded 302 in 76.8158 ms
+2026-04-12 00:26:01.544 -03:00 [INF] HTTP GET / responded 200 in 22.3553 ms
+2026-04-12 00:26:01.696 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2575 ms
+2026-04-12 00:26:03.063 -03:00 [INF] HTTP GET /Delete responded 200 in 23.9508 ms
+2026-04-12 00:26:03.101 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4827 ms
+2026-04-12 00:26:04.388 -03:00 [INF] HTTP POST /Delete responded 302 in 85.7063 ms
+2026-04-12 00:26:04.416 -03:00 [INF] HTTP GET / responded 200 in 21.3550 ms
+2026-04-12 00:26:04.522 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2953 ms
+2026-04-12 00:26:07.061 -03:00 [INF] HTTP GET /Aulas responded 200 in 175.3877 ms
+2026-04-12 00:26:07.100 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5951 ms
+2026-04-12 00:26:08.948 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 147.8326 ms
+2026-04-12 00:26:08.978 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.3630 ms
+2026-04-12 00:28:56.874 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 00:28:57.190 -03:00 [INF] HTTP GET / responded 200 in 321.3851 ms
+2026-04-12 00:28:57.260 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 2.7660 ms
+2026-04-12 00:28:57.348 -03:00 [INF] HTTP GET /favicon.ico responded 304 in 4.9335 ms
+2026-04-12 00:28:59.724 -03:00 [INF] HTTP GET /Aulas responded 200 in 261.0432 ms
+2026-04-12 00:28:59.778 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4875 ms
+2026-04-12 00:29:01.436 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 122.1658 ms
+2026-04-12 00:29:01.484 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.3645 ms
+2026-04-12 00:29:03.971 -03:00 [INF] HTTP GET /Aulas responded 200 in 82.7384 ms
+2026-04-12 00:29:04.011 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4093 ms
+2026-04-12 00:29:05.245 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 45.5893 ms
+2026-04-12 00:29:05.290 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.3283 ms
+2026-04-12 00:29:10.608 -03:00 [INF] HTTP GET /Aulas responded 200 in 73.8629 ms
+2026-04-12 00:29:10.651 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5002 ms
+2026-04-12 00:29:11.900 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 31.8210 ms
+2026-04-12 00:29:11.947 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2558 ms
+2026-04-12 00:29:13.607 -03:00 [INF] HTTP GET /Aulas responded 200 in 74.5518 ms
+2026-04-12 00:29:13.647 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 1.8807 ms
+2026-04-12 00:29:14.716 -03:00 [INF] HTTP GET / responded 200 in 18.5902 ms
+2026-04-12 00:29:14.755 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.7079 ms
+2026-04-12 00:29:16.441 -03:00 [INF] HTTP GET /Aulas responded 200 in 77.8103 ms
+2026-04-12 00:29:16.483 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 1.1159 ms
+2026-04-12 00:29:17.491 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 39.8842 ms
+2026-04-12 00:29:17.532 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.7807 ms
+2026-04-12 00:29:19.408 -03:00 [INF] HTTP GET /Aulas responded 200 in 79.4404 ms
+2026-04-12 00:29:19.444 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5047 ms
+2026-04-12 00:29:20.722 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 29.8616 ms
+2026-04-12 00:29:20.760 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.9243 ms
+2026-04-12 00:29:22.243 -03:00 [INF] HTTP GET /Aulas responded 200 in 67.1694 ms
+2026-04-12 00:29:22.283 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2390 ms
+2026-04-12 00:29:23.946 -03:00 [INF] HTTP GET / responded 200 in 21.3021 ms
+2026-04-12 00:29:23.982 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.7503 ms
+2026-04-12 00:32:38.501 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 00:32:38.842 -03:00 [INF] HTTP GET / responded 200 in 343.4872 ms
+2026-04-12 00:32:38.881 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 6.8090 ms
+2026-04-12 00:32:38.882 -03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 304 in 2.6687 ms
+2026-04-12 00:32:38.882 -03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 304 in 2.6688 ms
+2026-04-12 00:32:38.882 -03:00 [INF] HTTP GET /css/site.css responded 304 in 7.7546 ms
+2026-04-12 00:32:38.882 -03:00 [INF] HTTP GET /js/site.js responded 304 in 2.1747 ms
+2026-04-12 00:32:38.908 -03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 304 in 0.5823 ms
+2026-04-12 00:32:54.043 -03:00 [INF] HTTP GET /Aulas responded 200 in 215.3888 ms
+2026-04-12 00:32:54.080 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4939 ms
+2026-04-12 00:32:56.247 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 86.9284 ms
+2026-04-12 00:32:56.286 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5016 ms
+2026-04-12 00:32:59.265 -03:00 [INF] HTTP GET /Aulas responded 200 in 90.4924 ms
+2026-04-12 00:32:59.301 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5492 ms
+2026-04-12 00:33:00.402 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 44.7934 ms
+2026-04-12 00:33:00.435 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5354 ms
+2026-04-12 00:33:03.834 -03:00 [INF] HTTP GET /Aulas responded 200 in 94.5345 ms
+2026-04-12 00:33:03.872 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.3296 ms
+2026-04-12 00:33:06.478 -03:00 [INF] HTTP GET / responded 200 in 19.8369 ms
+2026-04-12 00:33:06.519 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4035 ms
+2026-04-12 00:40:53.555 -03:00 [INF] HTTP GET / responded 200 in 32.4578 ms
+2026-04-12 00:40:53.637 -03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 304 in 5.3370 ms
+2026-04-12 00:40:53.644 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 12.8823 ms
+2026-04-12 00:40:53.647 -03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 304 in 1.7616 ms
+2026-04-12 00:40:53.660 -03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 304 in 2.1580 ms
+2026-04-12 00:40:53.671 -03:00 [INF] HTTP GET /css/site.css responded 200 in 59.2724 ms
+2026-04-12 00:40:53.688 -03:00 [INF] HTTP GET /js/site.js responded 304 in 6.1064 ms
+2026-04-12 00:40:54.102 -03:00 [INF] HTTP GET /favicon.ico responded 304 in 0.4342 ms
+2026-04-12 00:41:05.610 -03:00 [INF] HTTP GET /Aulas responded 200 in 81.4114 ms
+2026-04-12 00:41:05.653 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5654 ms
+2026-04-12 00:41:07.777 -03:00 [INF] HTTP GET / responded 200 in 24.0857 ms
+2026-04-12 00:41:07.830 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4243 ms
+2026-04-12 00:41:11.689 -03:00 [INF] HTTP GET /Aulas responded 200 in 83.3940 ms
+2026-04-12 00:41:11.725 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.3039 ms
+2026-04-12 00:41:14.198 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 45.3189 ms
+2026-04-12 00:41:14.243 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2948 ms
+2026-04-12 00:41:16.491 -03:00 [INF] HTTP GET /Aulas responded 200 in 71.5800 ms
+2026-04-12 00:41:16.541 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2820 ms
+2026-04-12 00:41:17.902 -03:00 [INF] HTTP GET / responded 200 in 19.2068 ms
+2026-04-12 00:41:17.942 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.9522 ms
+2026-04-12 00:44:08.708 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 00:44:09.201 -03:00 [INF] HTTP GET /Aulas responded 200 in 496.6741 ms
+2026-04-12 00:44:09.250 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 3.7987 ms
+2026-04-12 00:44:09.289 -03:00 [INF] HTTP GET /css/site.css responded 304 in 8.2448 ms
+2026-04-12 00:44:12.965 -03:00 [INF] HTTP GET / responded 200 in 24.5478 ms
+2026-04-12 00:44:13.020 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.6226 ms
+2026-04-12 00:44:34.493 -03:00 [INF] HTTP GET /Cursos responded 200 in 93.0555 ms
+2026-04-12 00:44:34.528 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4801 ms
+2026-04-12 00:44:46.022 -03:00 [INF] HTTP GET /Aulas responded 200 in 107.5856 ms
+2026-04-12 00:44:46.057 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 1.2600 ms
+2026-04-12 00:44:49.408 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 90.4631 ms
+2026-04-12 00:44:49.450 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.6175 ms
+2026-04-12 00:44:58.176 -03:00 [INF] HTTP GET /Aulas responded 200 in 79.5281 ms
+2026-04-12 00:44:58.212 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4501 ms
+2026-04-12 00:45:00.767 -03:00 [INF] HTTP GET /Aulas/Details responded 200 in 44.0527 ms
+2026-04-12 00:45:00.805 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.7412 ms
+2026-04-12 00:45:02.262 -03:00 [INF] HTTP GET /Aulas responded 200 in 84.3492 ms
+2026-04-12 00:45:02.297 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.3388 ms
+2026-04-12 00:45:04.061 -03:00 [INF] HTTP GET / responded 200 in 1.3884 ms
+2026-04-12 00:45:04.110 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.6704 ms
+2026-04-12 00:45:07.123 -03:00 [INF] HTTP GET / responded 200 in 1.2366 ms
+2026-04-12 00:45:07.171 -03:00 [INF] HTTP GET /css/site.css responded 304 in 0.6208 ms
+2026-04-12 00:45:07.178 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.3048 ms
+2026-04-12 00:45:10.819 -03:00 [INF] HTTP GET /Cursos responded 200 in 20.7488 ms
+2026-04-12 00:45:10.859 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.4635 ms
+2026-04-12 00:45:13.665 -03:00 [INF] HTTP GET / responded 200 in 0.7231 ms
+2026-04-12 00:45:13.717 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.3622 ms
+2026-04-12 00:45:15.152 -03:00 [INF] HTTP GET /Cursos responded 200 in 33.1134 ms
+2026-04-12 00:45:15.191 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.6857 ms
+2026-04-12 00:45:20.237 -03:00 [INF] HTTP GET /health responded 200 in 89.1053 ms

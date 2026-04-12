@@ -1,0 +1,40 @@
+@page
+@model EdAnalytics.Pages.Cursos.IndexModel
+@{
+    ViewData["Title"] = "Gerenciamento de Cursos";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Gerenciamento de Cursos</h1>
+    <a asp-page="Create" class="btn btn-primary">
+        Adicionar Novo Curso
+    </a>
+</div>
+
+<p>Abaixo está a lista de todos os cursos cadastrados na plataforma.</p>
+
+<table class="table table-striped table-hover mt-3">
+    <thead class="table-dark">
+        <tr>
+            <th>Título do Curso</th>
+            <th>Área</th>
+            <th>Visualizações</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var curso in Model.Cursos)
+        {
+            <tr>
+                <td>@curso.Titulo</td>
+                <td>@curso.Area</td>
+                <td>@curso.Visualizacoes.ToString("N0")</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@curso.Id" class="btn btn-sm btn-outline-primary">Editar</a>
+                    <a asp-page="/Aulas/Index" asp-route-cursoId="@curso.Id" class="btn btn-sm btn-info">Ver Aulas</a>
+                    <a asp-page="./Delete" asp-route-id="@curso.Id" class="btn btn-sm btn-outline-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

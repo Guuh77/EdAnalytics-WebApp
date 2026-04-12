@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+  --bg-dark: #0f0b0d;
+  --bg-surface: #1a1215;
+  --bg-surface-elevated: #281a20;
+  --wine-base: #8e1b34; 
+  --wine-hover: #b82142;
+  --wine-glow: rgba(142, 27, 52, 0.4);
+  --text-primary: #f5f0f2;
+  --text-secondary: #d4c8cd;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+html, body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+body { margin-bottom: 60px; }
+
+/* NAVBAR GLASSMORPHISM */
+header .navbar {
+  background-color: rgba(15, 11, 13, 0.8) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  color: var(--wine-hover) !important;
+  letter-spacing: -0.5px;
+  font-size: 1.4rem;
+}
+.nav-link { font-weight: 600; }
+
+/* TITLES */
+h1, h2, h3, h4, h5 {
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+h1 {
+  background: linear-gradient(135deg, #fff, #ffb6c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* BUTTONS */
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: none;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--wine-base), #630c20);
+  border: none;
+  box-shadow: 0 4px 15px var(--wine-glow);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: white;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--wine-hover), var(--wine-base));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(184, 33, 66, 0.5);
+  color: white;
+}
+.btn-outline-primary {
+  border-color: var(--wine-hover);
+  color: var(--wine-hover);
+}
+.btn-outline-primary:hover {
+  background-color: var(--wine-hover);
+  color: white;
+  border-color: var(--wine-hover);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  transition: all 0.3s;
+}
+.btn-secondary:hover {
+  background: #3c242f;
+  color: white;
+  transform: translateY(-2px);
+  border-color: var(--wine-base);
+}
+
+/* "Ver Aulas" Button */
+.btn-info {
+  background: #2b171e;
+  color: #ffb6c7;
+  border: 1px solid var(--wine-base);
+  transition: all 0.3s ease;
+}
+.btn-info:hover {
+  background: var(--wine-base);
+  color: white;
+  border-color: var(--wine-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px var(--wine-glow);
+}
+
+/* CARDS & LISTS */
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+.bg-light { /* Sobrescrevendo bg-light do bootstrap pra leitura profunda */
+  background-color: var(--bg-surface) !important;
+  color: var(--text-primary) !important;
+}
+
+.list-group-item {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  border-radius: 12px !important;
+  transition: all 0.3s ease;
+}
+.list-group-item:hover {
+  background-color: var(--bg-surface-elevated);
+  transform: translateX(6px);
+  border-left: 4px solid var(--wine-hover);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.list-group-item h5 { margin-top: 5px; }
+
+/* TABLES */
+.table {
+  color: var(--text-secondary);
+  border-color: var(--border-subtle);
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.02);
+}
+.table-hover>tbody>tr:hover>* {
+  background-color: var(--wine-glow);
+  color: white;
+}
+.table-dark {
+  background-color: var(--bg-surface-elevated);
+  --bs-table-bg: var(--bg-surface-elevated);
+  --bs-table-border-color: var(--border-subtle);
+}
+
+/* FORMS */
+.form-control {
+  background-color: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: white;
+  border-radius: 8px;
+}
+.form-control:focus {
+  background-color: var(--bg-surface-elevated);
+  color: white;
+  border-color: var(--wine-hover);
+  box-shadow: 0 0 0 0.25rem var(--wine-glow);
+}
+.form-label { font-weight: 600; color: var(--text-secondary); }
+
+/* FOOTER */
+footer {
+  background-color: var(--bg-surface) !important;
+  border-top: 1px solid var(--border-subtle) !important;
+  color: var(--text-secondary) !important;
+  backdrop-filter: blur(10px);
+}

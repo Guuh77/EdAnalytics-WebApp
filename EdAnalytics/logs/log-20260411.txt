@@ -1,0 +1,17 @@
+2026-04-11 23:55:04.048 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-11 23:55:05.884 -03:00 [INF] HTTP GET / responded 200 in 1838.2057 ms
+2026-04-11 23:55:05.970 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 4.1263 ms
+2026-04-11 23:55:05.981 -03:00 [INF] HTTP GET /css/site.css responded 200 in 41.3545 ms
+2026-04-11 23:55:05.981 -03:00 [INF] HTTP GET /js/site.js responded 200 in 16.8579 ms
+2026-04-11 23:55:05.994 -03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 200 in 34.2197 ms
+2026-04-11 23:55:05.994 -03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 200 in 37.1510 ms
+2026-04-11 23:55:06.042 -03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 200 in 15.7445 ms
+2026-04-11 23:55:06.158 -03:00 [INF] HTTP GET /favicon.ico responded 200 in 6.3274 ms
+2026-04-11 23:55:16.367 -03:00 [INF] HTTP GET /Edit responded 200 in 275.9484 ms
+2026-04-11 23:55:16.412 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5582 ms
+2026-04-11 23:55:16.415 -03:00 [INF] HTTP GET /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js responded 200 in 3.4591 ms
+2026-04-11 23:55:16.416 -03:00 [INF] HTTP GET /lib/jquery-validation/dist/jquery.validate.min.js responded 200 in 4.6725 ms
+2026-04-11 23:55:20.441 -03:00 [INF] HTTP GET / responded 200 in 91.3222 ms
+2026-04-11 23:55:20.476 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.2767 ms
+2026-04-11 23:55:23.449 -03:00 [INF] HTTP GET / responded 200 in 21.8565 ms
+2026-04-11 23:55:23.485 -03:00 [INF] HTTP GET /EdAnalytics.WebApp.styles.css responded 404 in 0.5433 ms
