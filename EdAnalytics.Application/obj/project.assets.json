@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Documents\\Sprint3Net\\EdAnalytics-WebApp-.NET 1\\EdAnalytics-WebApp-main\\EdAnalytics.Application\\EdAnalytics.Application.csproj",
+      "projectUniqueName": "C:\\Users\\gusta\\Downloads\\Sprint4net\\Sprint4Net\\EdAnalytics-WebApp-.NET 1\\EdAnalytics-WebApp-main\\EdAnalytics.Application\\EdAnalytics.Application.csproj",
       "projectName": "EdAnalytics.Application",
-      "projectPath": "C:\\Users\\gusta\\OneDrive\\Documents\\Sprint3Net\\EdAnalytics-WebApp-.NET 1\\EdAnalytics-WebApp-main\\EdAnalytics.Application\\EdAnalytics.Application.csproj",
+      "projectPath": "C:\\Users\\gusta\\Downloads\\Sprint4net\\Sprint4Net\\EdAnalytics-WebApp-.NET 1\\EdAnalytics-WebApp-main\\EdAnalytics.Application\\EdAnalytics.Application.csproj",
       "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gusta\\OneDrive\\Documents\\Sprint3Net\\EdAnalytics-WebApp-.NET 1\\EdAnalytics-WebApp-main\\EdAnalytics.Application\\obj\\",
+      "outputPath": "C:\\Users\\gusta\\Downloads\\Sprint4net\\Sprint4Net\\EdAnalytics-WebApp-.NET 1\\EdAnalytics-WebApp-main\\EdAnalytics.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\gusta\\OneDrive\\Documents\\Sprint3Net\\EdAnalytics-WebApp-.NET 1\\EdAnalytics-WebApp-main\\EdAnalytics.Domain\\EdAnalytics.Domain.csproj": {
-              "projectPath": "C:\\Users\\gusta\\OneDrive\\Documents\\Sprint3Net\\EdAnalytics-WebApp-.NET 1\\EdAnalytics-WebApp-main\\EdAnalytics.Domain\\EdAnalytics.Domain.csproj"
+            "C:\\Users\\gusta\\Downloads\\Sprint4net\\Sprint4Net\\EdAnalytics-WebApp-.NET 1\\EdAnalytics-WebApp-main\\EdAnalytics.Domain\\EdAnalytics.Domain.csproj": {
+              "projectPath": "C:\\Users\\gusta\\Downloads\\Sprint4net\\Sprint4Net\\EdAnalytics-WebApp-.NET 1\\EdAnalytics-WebApp-main\\EdAnalytics.Domain\\EdAnalytics.Domain.csproj"
             }
           }
         }

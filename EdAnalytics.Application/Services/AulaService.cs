@@ -81,5 +81,24 @@ namespace EdAnalytics.Application.Services
         {
             await _aulaRepository.DeleteAsync(id);
         }
+
+        public async Task<PagedResult<AulaDto>> GetAulasPagedAsync(int cursoId, int page, int pageSize)
+        {
+            var (items, totalCount) = await _aulaRepository.GetPagedAsync(cursoId, page, pageSize);
+
+            return new PagedResult<AulaDto>
+            {
+                Items = items.Select(a => new AulaDto
+                {
+                    Id = a.Id,
+                    Titulo = a.Titulo,
+                    Conteudo = a.Conteudo,
+                    CursoId = a.CursoId
+                }).ToList(),
+                TotalCount = totalCount,
+                Page = page,
+                PageSize = pageSize
+            };
+        }
     }
 }

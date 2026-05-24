@@ -1,4 +1,4 @@
-﻿using EdAnalytics.Domain;
+using EdAnalytics.Domain;
 
 namespace EdAnalytics.Application.Interfaces
 {
@@ -8,6 +8,7 @@ namespace EdAnalytics.Application.Interfaces
         Task<List<Curso>> GetCursosMaisAcessadosAsync();
         Task<List<Curso>> GetAllAsync();
         Task<Curso?> GetByIdAsync(int id);
+        Task<(List<Curso> Items, int TotalCount)> GetPagedAsync(int page, int pageSize, string? search = null, string? area = null, string? orderBy = null, bool descending = false);
 
         // metodos de Escrita (Create, Update, Delete)
         Task<Curso> AddAsync(Curso curso);

@@ -47,5 +47,17 @@ namespace EdAnalytics.Infrastructure.Repositories
                 await _context.SaveChangesAsync();
             }
         }
+
+        public async Task<(List<Aula> Items, int TotalCount)> GetPagedAsync(int cursoId, int page, int pageSize)
+        {
+            var query = _context.Aulas.Where(a => a.CursoId == cursoId);
+            var totalCount = await query.CountAsync();
+            var items = await query.OrderBy(a => a.Id)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return (items, totalCount);
+        }
     }
 }

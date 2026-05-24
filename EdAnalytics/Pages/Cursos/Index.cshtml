@@ -1,40 +1,169 @@
 @page
 @model EdAnalytics.Pages.Cursos.IndexModel
 @{
-    ViewData["Title"] = "Gerenciamento de Cursos";
+    ViewData["Title"] = "Catálogo de Cursos";
 }
 
-<div class="d-flex justify-content-between align-items-center mb-4">
-    <h1>Gerenciamento de Cursos</h1>
-    <a asp-page="Create" class="btn btn-primary">
-        Adicionar Novo Curso
-    </a>
+<div class="container py-5">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-5">
+        <div>
+            <h1 class="catalog-main-title mb-2">Catálogo de Cursos Acadêmicos</h1>
+            <p class="text-muted mb-0">Explore módulos completos e acompanhe suas métricas de aprendizado em tempo real.</p>
+        </div>
+        <div>
+            <a asp-page="Create" class="btn btn-primary btn-premium-glow px-4 py-2">
+                Adicionar Novo Curso <i class="bi bi-plus-lg ms-1"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- GLASSMORPHISM TABLE CONTAINER -->
+    <div class="card glass-card border-0 shadow-lg overflow-hidden">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-custom mb-0">
+                    <thead>
+                        <tr>
+                            <th class="ps-4">Título do Curso</th>
+                            <th>Área Acadêmica</th>
+                            <th>Acessos / Observabilidade</th>
+                            <th class="pe-4 text-end">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var curso in Model.Cursos)
+                        {
+                            <tr>
+                                <td class="ps-4 py-3 align-middle">
+                                    <div class="d-flex align-items-center">
+                                        <div class="course-icon-badge me-3">
+                                            <i class="bi bi-journal-code text-wine-highlight"></i>
+                                        </div>
+                                        <div>
+                                            <span class="course-title-text text-white fw-bold">@curso.Titulo</span>
+                                            <small class="text-muted d-block" style="font-size: 0.7rem;">ID: @curso.Id</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="align-middle">
+                                    <span class="badge badge-wine-area px-3 py-1.5">@curso.Area</span>
+                                </td>
+                                <td class="align-middle">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="views-count fw-bold text-light">@curso.Visualizacoes.ToString("N0")</span>
+                                        <span class="text-muted small" style="font-size: 0.75rem;">visualizações</span>
+                                    </div>
+                                </td>
+                                <td class="pe-4 py-3 align-middle text-end">
+                                    <div class="d-inline-flex gap-2">
+                                        <a asp-page="/Aulas/Index" asp-route-cursoId="@curso.Id" class="btn btn-sm btn-info px-3 py-2 btn-action">
+                                            <i class="bi bi-play-circle-fill me-1"></i> Ver Aulas
+                                        </a>
+                                        <a asp-page="./Edit" asp-route-id="@curso.Id" class="btn btn-sm btn-outline-primary px-3 py-2 btn-action">
+                                            <i class="bi bi-pencil-square"></i> Editar
+                                        </a>
+                                        <a asp-page="./Delete" asp-route-id="@curso.Id" class="btn btn-sm btn-outline-danger px-3 py-2 btn-action">
+                                            <i class="bi bi-trash-fill"></i> Excluir
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
 
-<p>Abaixo está a lista de todos os cursos cadastrados na plataforma.</p>
+<style>
+    .catalog-main-title {
+        font-weight: 800;
+        background: linear-gradient(135deg, #ffffff, #ffb6c7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -0.5px;
+    }
+    .glass-card {
+        background: rgba(26, 18, 21, 0.6);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+        border-radius: 18px;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4) !important;
+    }
 
-<table class="table table-striped table-hover mt-3">
-    <thead class="table-dark">
-        <tr>
-            <th>Título do Curso</th>
-            <th>Área</th>
-            <th>Visualizações</th>
-            <th>Ações</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var curso in Model.Cursos)
-        {
-            <tr>
-                <td>@curso.Titulo</td>
-                <td>@curso.Area</td>
-                <td>@curso.Visualizacoes.ToString("N0")</td>
-                <td>
-                    <a asp-page="./Edit" asp-route-id="@curso.Id" class="btn btn-sm btn-outline-primary">Editar</a>
-                    <a asp-page="/Aulas/Index" asp-route-cursoId="@curso.Id" class="btn btn-sm btn-info">Ver Aulas</a>
-                    <a asp-page="./Delete" asp-route-id="@curso.Id" class="btn btn-sm btn-outline-danger">Excluir</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    /* Prestigious custom table */
+    .table-custom {
+        color: var(--text-secondary);
+        width: 100%;
+        border-collapse: separate;
+    }
+    .table-custom thead th {
+        background-color: rgba(15, 11, 13, 0.8) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 600;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 15px 10px;
+    }
+    .table-custom tbody tr {
+        transition: all 0.25s ease;
+    }
+    .table-custom tbody tr:hover {
+        background-color: rgba(142, 27, 52, 0.06) !important;
+    }
+    .table-custom tbody td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        padding: 16px 10px;
+    }
+
+    /* Course Badges */
+    .course-icon-badge {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: rgba(142, 27, 52, 0.15);
+        border: 1px solid rgba(184, 33, 66, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.15rem;
+    }
+    .badge-wine-area {
+        background-color: rgba(142, 27, 52, 0.25);
+        border: 1px solid rgba(184, 33, 66, 0.35);
+        color: #ffb6c7;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    .text-wine-highlight {
+        color: #ffb6c7;
+    }
+
+    /* Action Buttons */
+    .btn-action {
+        font-size: 0.8rem;
+        font-weight: 600;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+    }
+    .btn-action:hover {
+        transform: translateY(-1px);
+    }
+    
+    .btn-premium-glow {
+        background: linear-gradient(135deg, #8e1b34, #630c20) !important;
+        border: none !important;
+        box-shadow: 0 4px 15px rgba(142, 27, 52, 0.4) !important;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+        font-weight: 600;
+    }
+    .btn-premium-glow:hover {
+        background: linear-gradient(135deg, #b82142, #8e1b34) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(184, 33, 66, 0.5) !important;
+    }
+</style>

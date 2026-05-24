@@ -4,17 +4,149 @@
     ViewData["Title"] = Model.Aula?.Titulo ?? "Aula";
 }
 
-@if(Model.Aula == null)
-{
-    <p>Aula não encontrada.</p>
-}
-else
-{
-    <div class="mb-4">
-        <a asp-page="./Index" asp-route-cursoId="@Model.Aula.CursoId" class="btn btn-secondary mb-3">&larr; Voltar para as aulas</a>
-        
-        <div class="card p-5 shadow-sm bg-light">
-            @Html.Raw(Model.Aula.Conteudo)
+<div class="container py-5">
+    @if (Model.Aula == null)
+    {
+        <div class="row justify-content-center text-center">
+            <div class="col-md-8 py-5">
+                <div class="card glass-card p-5 border-0">
+                    <i class="bi bi-exclamation-triangle-fill text-danger mb-3" style="font-size: 3rem;"></i>
+                    <h4>Aula não encontrada</h4>
+                    <p class="text-muted">A aula solicitada não existe ou foi removida da base de dados.</p>
+                    <a asp-page="/Cursos/Index" class="btn btn-secondary mt-3 px-4">Voltar ao Catálogo</a>
+                </div>
+            </div>
         </div>
-    </div>
-}
+    }
+    else
+    {
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                
+                <!-- NAVIGATION & STATUS BAR -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <a asp-page="./Index" asp-route-cursoId="@Model.Aula.CursoId" class="btn btn-secondary btn-sm px-3">
+                        &larr; Voltar para as aulas
+                    </a>
+                    <span class="badge badge-success-custom px-3 py-1.5 fw-bold">
+                        <i class="bi bi-check-circle-fill me-1"></i> Aula Concluída!
+                    </span>
+                </div>
+
+                <!-- PROGRESS NOTIFICATION BANNER -->
+                <div class="alert alert-success-custom d-flex align-items-center mb-4 p-3 border-0 shadow-sm">
+                    <i class="bi bi-patch-check-fill text-success fs-3 me-3"></i>
+                    <div>
+                        <strong class="text-white">✓ Parabéns por concluir esta aula!</strong> 
+                        Seu progresso de estudo de 2 horas e métricas analíticas foram atualizados em tempo real no 
+                        <a href="/Aluno/Perfil" class="text-wine-link fw-bold text-decoration-underline">seu perfil do aluno</a>.
+                    </div>
+                </div>
+
+                <!-- MAIN LECTURE CONTAINER -->
+                <div class="card glass-card border-0 shadow-lg mb-4">
+                    <div class="card-body p-5">
+                        <div class="mb-4 pb-3 border-bottom border-secondary-subtle">
+                            <span class="text-wine-highlight fw-bold text-uppercase small tracking-wide">Área do Conhecimento Acadêmico</span>
+                            <h1 class="lecture-main-title mt-1 mb-2">@Model.Aula.Titulo</h1>
+                            <div class="d-flex gap-3 text-muted small mt-2">
+                                <span><i class="bi bi-book-half me-1.5"></i>EdAnalytics Academy</span>
+                                <span><i class="bi bi-file-earmark-text me-1.5"></i>Leitura Profunda</span>
+                                <span><i class="bi bi-clock me-1.5"></i>Carga: 2 Horas</span>
+                            </div>
+                        </div>
+
+                        <!-- READ CONTAINER -->
+                        <div class="lecture-read-body text-secondary mt-4">
+                            @Html.Raw(Model.Aula.Conteudo)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOOTER ACTIONS -->
+                <div class="card glass-card p-3 border-0 d-flex flex-row justify-content-between align-items-center">
+                    <span class="text-muted small">Módulo concluído. O log foi gerado no MongoDB.</span>
+                    <a asp-page="./Index" asp-route-cursoId="@Model.Aula.CursoId" class="btn btn-primary btn-premium-glow px-4">
+                        Concluir e Voltar <i class="bi bi-check2-all ms-1"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .glass-card {
+        background: rgba(26, 18, 21, 0.6);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+        border-radius: 18px;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4) !important;
+    }
+    .lecture-main-title {
+        font-weight: 800;
+        background: linear-gradient(135deg, #ffffff, #ffb6c7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -0.5px;
+    }
+    .badge-success-custom {
+        background-color: rgba(40, 167, 69, 0.15);
+        color: #28a745;
+        border: 1px solid rgba(40, 167, 69, 0.3);
+        border-radius: 20px;
+        font-size: 0.85rem;
+    }
+    .alert-success-custom {
+        background-color: rgba(40, 167, 69, 0.1);
+        border: 1px solid rgba(40, 167, 69, 0.25) !important;
+        border-radius: 12px;
+        color: #d4c8cd;
+        font-size: 0.925rem;
+    }
+    .text-wine-link {
+        color: #ffb6c7 !important;
+        transition: color 0.2s ease;
+    }
+    .text-wine-link:hover {
+        color: #b82142 !important;
+    }
+    
+    /* Read body layout */
+    .lecture-read-body {
+        font-size: 1.15rem;
+        line-height: 1.9;
+        font-family: Georgia, serif;
+        color: #e5dde1 !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+    .lecture-read-body p {
+        margin-bottom: 1.8rem;
+    }
+    .lecture-read-body h2, .lecture-read-body h3 {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 800;
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        letter-spacing: -0.5px;
+    }
+    
+    .tracking-wide {
+        letter-spacing: 2px;
+    }
+    .btn-premium-glow {
+        background: linear-gradient(135deg, #8e1b34, #630c20) !important;
+        border: none !important;
+        box-shadow: 0 4px 15px rgba(142, 27, 52, 0.4) !important;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+        font-weight: 600;
+    }
+    .btn-premium-glow:hover {
+        background: linear-gradient(135deg, #b82142, #8e1b34) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(184, 33, 66, 0.5) !important;
+    }
+</style>

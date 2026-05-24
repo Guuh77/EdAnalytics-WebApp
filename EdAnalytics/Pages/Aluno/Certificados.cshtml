@@ -1,0 +1,420 @@
+@page
+@model EdAnalytics.Pages.Aluno.CertificadosModel
+@{
+    ViewData["Title"] = "Meus Certificados";
+}
+
+<div class="container py-5">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="page-header-title mb-2">Meus Certificados Acadêmicos</h1>
+            <p class="text-muted">Abaixo estão listados os certificados emitidos para você. Selecione um para visualizar e imprimir em alta resolução.</p>
+        </div>
+    </div>
+
+    @if (Model.Certificates == null || !Model.Certificates.Any())
+    {
+        <div class="row">
+            <div class="col-12 text-center py-5">
+                <div class="card glass-card p-5 border-0">
+                    <i class="bi bi-award-fill text-muted mb-3" style="font-size: 3rem;"></i>
+                    <h4>Nenhum certificado disponível</h4>
+                    <p class="text-muted mb-0">Você precisa concluir as aulas de algum curso para liberar certificados.</p>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            <!-- SIDEBAR LIST OF CERTIFICATES -->
+            <div class="col-lg-4 d-print-none">
+                <div class="d-flex flex-column gap-3">
+                    @for (int i = 0; i < Model.Certificates.Count; i++)
+                    {
+                        var cert = Model.Certificates[i];
+                        <div class="card certificate-list-item @(i == 0 ? "active" : "")" 
+                             onclick="showCertificate(@i)" id="cert-tab-@i">
+                            <div class="card-body p-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="badge-icon me-3">
+                                        <i class="bi bi-patch-check-fill text-wine-highlight"></i>
+                                    </div>
+                                    <div class="flex-grow-1 overflow-hidden">
+                                        <h6 class="mb-1 text-truncate-custom text-white">@cert.CourseTitle</h6>
+                                        <div class="d-flex justify-content-between text-muted small" style="font-size: 0.75rem;">
+                                            <span>Emitido em @cert.IssueDate</span>
+                                            <span class="text-wine-highlight">Carga: @cert.Workload</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- PREMIUM CERTIFICATE DISPLAY CONTAINER -->
+            <div class="col-lg-8">
+                <div class="card glass-card p-2 border-0 shadow-lg position-relative">
+                    
+                    <!-- ACTIONS BAR (DOWNLOAD/PRINT) -->
+                    <div class="card-header border-0 bg-transparent d-flex justify-content-between align-items-center p-3 d-print-none">
+                        <span class="text-secondary small"><i class="bi bi-info-circle me-1"></i> Formato oficial A4 (Horizontal)</span>
+                        <button onclick="window.print()" class="btn btn-outline-primary btn-sm px-4 py-2">
+                            <i class="bi bi-printer-fill me-2"></i> Imprimir / Baixar PDF
+                        </button>
+                    </div>
+
+                    <!-- CERTIFICATES RENDER FRAME -->
+                    <div class="certificates-frame-outer p-1">
+                        @for (int i = 0; i < Model.Certificates.Count; i++)
+                        {
+                            var cert = Model.Certificates[i];
+                            <div class="certificate-frame @(i == 0 ? "d-block" : "d-none")" id="cert-frame-@i">
+                                <div class="certificate-border-double p-4">
+                                    <div class="certificate-watermark"></div>
+                                    
+                                    <!-- HEADER -->
+                                    <div class="text-center mb-4">
+                                        <h5 class="cert-institution">EDANALYTICS PREMIUM ACADEMY</h5>
+                                        <div class="institution-divider mx-auto my-2"></div>
+                                        <h2 class="cert-main-title">CERTIFICADO DE CONCLUSÃO</h2>
+                                    </div>
+
+                                    <!-- BODY -->
+                                    <div class="text-center cert-body-container px-3">
+                                        <p class="cert-text-intro">Certificamos, para os devidos fins, que o aluno(a)</p>
+                                        <h3 class="cert-student-name py-2">@Model.StudentName</h3>
+                                        <p class="cert-text-description">
+                                            concluiu com êxito e aproveitamento máximo de <strong>Nota @cert.Grade</strong> o programa de curso de 
+                                            extensão e observabilidade avançada de:
+                                        </p>
+                                        <h4 class="cert-course-title text-uppercase py-2 text-white">@cert.CourseTitle</h4>
+                                        <p class="cert-text-meta">
+                                            realizado em conformidade com as diretrizes acadêmicas da plataforma, com carga horária total de 
+                                            <strong>@cert.Workload</strong>, finalizado em <strong>@cert.IssueDate</strong>.
+                                        </p>
+                                    </div>
+
+                                    <!-- SIGNATURES AND SEAL -->
+                                    <div class="row align-items-end mt-4 pt-3 px-4">
+                                        <div class="col-4 text-center">
+                                            <div class="signature-line mx-auto mb-2"></div>
+                                            <span class="signature-name d-block">DIRETORIA ACADÊMICA</span>
+                                            <span class="signature-institution small text-muted">EdAnalytics Inc.</span>
+                                        </div>
+                                        
+                                        <div class="col-4 text-center">
+                                            <!-- GOLDEN SEAL -->
+                                            <div class="gold-seal mx-auto mb-1">
+                                                <div class="seal-inner">
+                                                    <i class="bi bi-shield-fill-check"></i>
+                                                    <span class="seal-text">VERIFICADO</span>
+                                                </div>
+                                                <div class="seal-rays"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4 text-center">
+                                            <div class="signature-line mx-auto mb-2"></div>
+                                            <span class="signature-name d-block">COORDENAÇÃO FIAP</span>
+                                            <span class="signature-institution small text-muted">Professor RM561055</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- FOOTER DETAILS -->
+                                    <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top border-dark-subtle px-3 small text-muted" style="font-size: 0.65rem;">
+                                        <span>Código de Autenticação: <strong class="text-light">@cert.VerificationCode</strong></span>
+                                        <span>Módulo Acadêmico Registrado no MongoDB e Oracle DB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    function showCertificate(index) {
+        // Toggle certificate tabs
+        document.querySelectorAll('.certificate-list-item').forEach((item, idx) => {
+            if (idx === index) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+
+        // Toggle certificate render frames
+        document.querySelectorAll('.certificate-frame').forEach((frame, idx) => {
+            if (idx === index) {
+                frame.classList.remove('d-none');
+                frame.classList.add('d-block');
+            } else {
+                frame.classList.remove('d-block');
+                frame.classList.add('d-none');
+            }
+        });
+    }
+</script>
+
+<style>
+    .page-header-title {
+        font-weight: 800;
+        background: linear-gradient(135deg, #fff, #ffb6c7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .glass-card {
+        background: rgba(26, 18, 21, 0.6);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+        border-radius: 18px;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    /* Certificate item */
+    .certificate-list-item {
+        background-color: rgba(26, 18, 21, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.04) !important;
+        border-radius: 12px !important;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .certificate-list-item:hover {
+        background-color: rgba(26, 18, 21, 0.85);
+        transform: translateY(-2px);
+        border-color: rgba(142, 27, 52, 0.3) !important;
+    }
+    .certificate-list-item.active {
+        background: linear-gradient(135deg, rgba(142, 27, 52, 0.25), rgba(43, 8, 15, 0.4));
+        border: 1px solid rgba(184, 33, 66, 0.4) !important;
+        box-shadow: 0 4px 15px rgba(142, 27, 52, 0.15);
+    }
+    .badge-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+        background-color: rgba(142, 27, 52, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.15rem;
+    }
+    .text-truncate-custom {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .text-wine-highlight {
+        color: #ffb6c7;
+    }
+
+    /* CERTIFICATE FRAME STYLING */
+    .certificates-frame-outer {
+        background-color: #0b0709;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.02);
+    }
+    .certificate-frame {
+        position: relative;
+        background-color: #150e11;
+        color: #d4c8cd;
+        font-family: 'Times New Roman', Georgia, serif;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        overflow: hidden;
+    }
+    
+    /* Watermark effect */
+    .certificate-watermark {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-image: radial-gradient(rgba(142, 27, 52, 0.02) 2px, transparent 2px);
+        background-size: 16px 16px;
+        pointer-events: none;
+    }
+
+    /* Prestigious border frame */
+    .certificate-border-double {
+        border: 4px double #d4af37; /* Gold outer */
+        border-radius: 6px;
+        position: relative;
+    }
+    .certificate-border-double::before {
+        content: "";
+        position: absolute;
+        top: 8px; left: 8px; right: 8px; bottom: 8px;
+        border: 2px solid rgba(142, 27, 52, 0.4); /* Wine inner */
+        pointer-events: none;
+    }
+
+    .cert-institution {
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.95rem;
+        letter-spacing: 4px;
+        color: #d4af37;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .institution-divider {
+        width: 120px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    }
+    .cert-main-title {
+        font-family: 'Outfit', sans-serif;
+        font-size: 2.2rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        color: white;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+
+    .cert-body-container {
+        font-size: 1.15rem;
+        line-height: 1.6;
+    }
+    .cert-text-intro {
+        font-style: italic;
+        color: #a4969c;
+    }
+    .cert-student-name {
+        font-family: 'Outfit', sans-serif;
+        font-size: 2.4rem;
+        font-weight: 800;
+        color: #d4af37;
+        letter-spacing: -0.5px;
+    }
+    .cert-text-description {
+        font-size: 1.1rem;
+        color: #c4b6bc;
+    }
+    .cert-course-title {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+    .cert-text-meta {
+        font-size: 1rem;
+        color: #a4969c;
+    }
+
+    .signature-line {
+        width: 140px;
+        height: 1px;
+        background-color: rgba(255,255,255,0.25);
+    }
+    .signature-name {
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .signature-institution {
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.65rem;
+    }
+
+    /* Prestigious Golden Seal */
+    .gold-seal {
+        width: 70px;
+        height: 70px;
+        background: radial-gradient(circle, #f3e092 0%, #d4af37 70%, #aa800a 100%);
+        border-radius: 50%;
+        border: 2px solid rgba(255,255,255,0.4);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5), 0 0 15px rgba(212, 175, 55, 0.3);
+    }
+    .seal-inner {
+        text-align: center;
+        color: #312100;
+    }
+    .seal-inner i {
+        font-size: 1.4rem;
+        display: block;
+        line-height: 1;
+        margin-bottom: 2px;
+    }
+    .seal-text {
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.45rem;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        display: block;
+    }
+    .seal-rays {
+        position: absolute;
+        top: -4px; left: -4px; right: -4px; bottom: -4px;
+        border-radius: 50%;
+        border: 1px dashed rgba(212, 175, 55, 0.8);
+        pointer-events: none;
+    }
+
+    /* CUSTOM CSS PRINT STYLES FOR HIGH QUALITY DOWNLOAD */
+    @@media print {
+        body * {
+            visibility: hidden;
+            background-color: transparent !important;
+        }
+        .col-lg-8, .col-lg-8 * {
+            visibility: visible;
+        }
+        .col-lg-8 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .d-print-none {
+            display: none !important;
+        }
+        .glass-card {
+            background: none !important;
+            backdrop-filter: none !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        .certificates-frame-outer {
+            border: none !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+        .certificate-frame {
+            background-color: #11090c !important; /* Force high contrast print background color */
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            border-radius: 0;
+            box-shadow: none !important;
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+        .certificate-border-double {
+            border: 4px double #aa800a !important;
+        }
+        .cert-student-name {
+            color: #aa800a !important;
+        }
+        .gold-seal {
+            background: #d4af37 !important;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+    }
+</style>

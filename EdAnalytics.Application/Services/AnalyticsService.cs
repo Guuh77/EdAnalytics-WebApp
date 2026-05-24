@@ -1,4 +1,4 @@
-﻿using EdAnalytics.Application.DTOs;
+using EdAnalytics.Application.DTOs;
 using EdAnalytics.Application.Interfaces;
 using EdAnalytics.Application.ViewModels;
 using EdAnalytics.Domain;
@@ -79,6 +79,27 @@ namespace EdAnalytics.Application.Services
         public async Task DeleteCursoAsync(int id)
         {
             await _cursoRepository.DeleteAsync(id);
+        }
+
+        public async Task<PagedResult<CursoDto>> GetCursosPagedAsync(QueryParameters parameters)
+        {
+            var (items, totalCount) = await _cursoRepository.GetPagedAsync(
+                parameters.Page, parameters.PageSize, parameters.Search,
+                parameters.Area, parameters.OrderBy, parameters.Descending);
+
+            return new PagedResult<CursoDto>
+            {
+                Items = items.Select(curso => new CursoDto
+                {
+                    Id = curso.Id,
+                    Titulo = curso.Titulo,
+                    Area = curso.Area,
+                    Visualizacoes = curso.Visualizacoes
+                }).ToList(),
+                TotalCount = totalCount,
+                Page = parameters.Page,
+                PageSize = parameters.PageSize
+            };
         }
     }
 }

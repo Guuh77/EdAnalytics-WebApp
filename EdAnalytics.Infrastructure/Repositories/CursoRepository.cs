@@ -1,4 +1,4 @@
-﻿using EdAnalytics.Application.Interfaces;
+using EdAnalytics.Application.Interfaces;
 using EdAnalytics.Domain;
 using EdAnalytics.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -49,6 +49,32 @@ namespace EdAnalytics.Infrastructure.Repositories
                 _context.Cursos.Remove(curso);
                 await _context.SaveChangesAsync();
             }
+        }
+
+        public async Task<(List<Curso> Items, int TotalCount)> GetPagedAsync(
+            int page, int pageSize, string? search = null, string? area = null,
+            string? orderBy = null, bool descending = false)
+        {
+            var query = _context.Cursos.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(search))
+                query = query.Where(c => c.Titulo.Contains(search));
+
+            if (!string.IsNullOrWhiteSpace(area))
+                query = query.Where(c => c.Area == area);
+
+            query = orderBy?.ToLower() switch
+            {
+                "titulo" => descending ? query.OrderByDescending(c => c.Titulo) : query.OrderBy(c => c.Titulo),
+                "area" => descending ? query.OrderByDescending(c => c.Area) : query.OrderBy(c => c.Area),
+                "visualizacoes" => descending ? query.OrderByDescending(c => c.Visualizacoes) : query.OrderBy(c => c.Visualizacoes),
+                _ => descending ? query.OrderByDescending(c => c.Id) : query.OrderBy(c => c.Id)
+            };
+
+            var totalCount = await query.CountAsync();
+            var items = await query.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
+
+            return (items, totalCount);
         }
     }
 }

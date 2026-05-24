@@ -1,0 +1,139 @@
+@page
+@model EdAnalytics.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Entrar";
+}
+
+<div class="row justify-content-center align-items-center min-vh-75 py-5">
+    <div class="col-md-6 col-lg-5">
+        <div class="card glass-card p-4 border-0 shadow-lg">
+            <div class="card-body">
+                <div class="text-center mb-4">
+                    <h2 class="auth-title">Entrar na EdAnalytics</h2>
+                    <p class="text-muted text-small">Acesse o seu portal de observabilidade e aprendizado</p>
+                </div>
+
+                @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                {
+                    <div class="alert alert-danger-custom text-center mb-3">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i> @Model.ErrorMessage
+                    </div>
+                }
+
+                <form method="post">
+                    <div class="mb-3">
+                        <label asp-for="Input.Email" class="form-label">E-mail</label>
+                        <input asp-for="Input.Email" class="form-control input-custom" placeholder="exemplo@edanalytics.com" required autocomplete="email" />
+                        <span asp-validation-for="Input.Email" class="text-danger-custom small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="Input.Password" class="form-label">Senha</label>
+                        <input asp-for="Input.Password" class="form-control input-custom" placeholder="Digite sua senha" required autocomplete="current-password" />
+                        <span asp-validation-for="Input.Password" class="text-danger-custom small"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 py-2.5 mb-3 btn-premium-glow">
+                        Entrar <i class="bi bi-box-arrow-in-right ms-1"></i>
+                    </button>
+                </form>
+
+                <div class="text-center mt-3">
+                    <p class="mb-0 text-secondary">Não tem uma conta? <a asp-page="/Account/Register" class="wine-link">Cadastre-se</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sugestões de Contas para Teste -->
+        <div class="card glass-card mt-4 p-3 border-0">
+            <div class="text-center mb-2">
+                <span class="badge bg-wine-badge px-3 py-1">Ambiente de Avaliação</span>
+            </div>
+            <p class="text-center text-muted mb-2 small" style="font-size: 0.8rem;">Utilize as credenciais de teste abaixo:</p>
+            <div class="d-flex flex-column gap-1 text-center small text-secondary">
+                <div><strong>Aluno:</strong> aluno@edanalytics.com <span class="mx-1">|</span> Senha: <code>Aluno@123</code></div>
+                <div><strong>Professor:</strong> professor@edanalytics.com <span class="mx-1">|</span> Senha: <code>Prof@123</code></div>
+                <div><strong>Admin:</strong> admin@edanalytics.com <span class="mx-1">|</span> Senha: <code>Admin@123</code></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    .min-vh-75 {
+        min-height: 75vh;
+    }
+    .glass-card {
+        background: rgba(26, 18, 21, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5) !important;
+    }
+    .auth-title {
+        font-weight: 800;
+        background: linear-gradient(135deg, #ffffff, #ffb6c7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -0.5px;
+    }
+    .text-small {
+        font-size: 0.9rem;
+    }
+    .alert-danger-custom {
+        background-color: rgba(142, 27, 52, 0.15);
+        color: #ffb6c7;
+        border: 1px solid rgba(142, 27, 52, 0.3);
+        border-radius: 8px;
+        font-size: 0.875rem;
+        padding: 10px;
+    }
+    .text-danger-custom {
+        color: #ff5c7d;
+        display: block;
+        margin-top: 4px;
+    }
+    .input-custom {
+        background-color: rgba(15, 11, 13, 0.6) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        color: white !important;
+        padding: 12px;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+    }
+    .input-custom:focus {
+        border-color: #8e1b34 !important;
+        box-shadow: 0 0 12px rgba(142, 27, 52, 0.4) !important;
+    }
+    .btn-premium-glow {
+        background: linear-gradient(135deg, #8e1b34, #630c20) !important;
+        border: none !important;
+        box-shadow: 0 4px 15px rgba(142, 27, 52, 0.4) !important;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+        font-weight: 600;
+    }
+    .btn-premium-glow:hover {
+        background: linear-gradient(135deg, #b82142, #8e1b34) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(184, 33, 66, 0.5) !important;
+    }
+    .wine-link {
+        color: #ffb6c7 !important;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s ease;
+    }
+    .wine-link:hover {
+        color: #b82142 !important;
+    }
+    .bg-wine-badge {
+        background-color: rgba(142, 27, 52, 0.3);
+        border: 1px solid rgba(184, 33, 66, 0.4);
+        color: #ffb6c7;
+    }
+</style>

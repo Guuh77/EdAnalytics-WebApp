@@ -1,4 +1,4 @@
-﻿using EdAnalytics.Application.DTOs;
+using EdAnalytics.Application.DTOs;
 using EdAnalytics.Application.ViewModels;
 
 namespace EdAnalytics.Application.Interfaces
@@ -9,6 +9,7 @@ namespace EdAnalytics.Application.Interfaces
         Task<List<CursoDto>> GetCursosMaisVistosAsync();
         Task<List<CursoDto>> GetAllCursosAsync();
         Task<CursoViewModel?> GetCursoParaEdicaoAsync(int id);
+        Task<PagedResult<CursoDto>> GetCursosPagedAsync(QueryParameters parameters);
 
         // Métodos de Escrita (Create, Update, Delete)
         Task CreateCursoAsync(CursoViewModel model);
